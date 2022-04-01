@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #454444;
+        }
+        
+        fieldset {
+            width: 400px;
+            height: 610px;
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 19px;
+            background-color: white;
+            border-radius: 5px;
+            border: 0;
+        }
+        
+        legend {
+            background-color: rgb(52, 212, 212);
+            text-align: center;
+            font-size: 25px;
+            width: 70%;
+            height: 40px;
+            color: white;
+        }
+        
+        form input {
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        button {
+            font-size: 22px;
+            height: 50px;
+            width: 100%;
+            border: 0;
+            background-color: rgb(52, 212, 212);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        form label {
+            color: rgb(66, 63, 63);
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"] {
+            width: 90%;
+            height: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+
+            <legend>
+                Sign Up
+            </legend>
+            <!-- Full name , Email , re-enter email , password, re-enter password , radio , submit -->
+
+
+            <div>
+                <label for="username">Username:</label> <br/>
+
+                <input required type="text" name="username" id="username" placeholder="Enter your username">
+            </div>
+
+            <div>
+                <label for="email">Email:</label> <br/>
+                <input required type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="password">Password: </label> <br/>
+                <input required type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+
+            <div>
+                <label for="confirm_password">Confirm Password:</label> <br/>
+                <input required type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+            </div>
+
+            <div>
+                <label for="">Date of Birth:</label> <br>
+                <input type="date" name="" id="">
+            </div>
+
+            <div>
+
+                <label for="male">
+                Male
+                 <input type="radio" name="gender" id="male">
+            </label>
+
+                <label for="female">
+                Female
+                 <input type="radio" name="gender" id="female">
+            </label>
+
+                <label for="other">
+                Other
+                 <input type="radio" name="gender" id="other">
+
+            </label>
+            </div>
+
+
+            <div>
+
+                <input style="width:10px ;" type="checkbox" name="agree" id="agree">
+                <label style="font-size: 14px;" for="agree">I Agree To The Terms of Use </label>
+            </div> <br>
+
+            <button type="submit">Submit Now</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
